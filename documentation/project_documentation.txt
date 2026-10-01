@@ -1,0 +1,878 @@
+Job Market Intelligence & Skill Gap Analysis System
+
+1. Project Overview
+
+The Job Market Intelligence & Skill Gap Analysis System is a data analytics project developed to study job market trends, salary patterns, skill requirements, job roles, industries, work modes, and candidate skill gaps.
+
+The main purpose of this project is to understand how job market data can be stored, analyzed, and presented in a simple and useful way using SQL, Python, and an interactive dashboard.
+
+For this project, a realistic synthetic dataset was created specifically for portfolio and educational analysis. The dataset is not collected from a live job portal or real company database. It was designed to represent realistic job-market scenarios while keeping the project suitable for learning and demonstration.
+
+---
+
+2. Problem Statement
+
+Job seekers often have difficulty understanding which skills are in demand, what types of jobs are available, how salaries vary, and whether their current skills match job requirements.
+
+The project aims to analyze these areas in a structured database and present the results through SQL analysis, Python visualizations, and a Streamlit dashboard.
+
+---
+
+3. Project Objectives
+
+The main objectives of the project are:
+
+- Store job market information in a structured MySQL database.
+- Analyze job postings using SQL.
+- Identify commonly demanded job roles and industries.
+- Analyze minimum and maximum salary ranges.
+- Identify the most demanded technical skills.
+- Analyze remote, hybrid, and onsite opportunities.
+- Compare job skill demand with candidate skills.
+- Perform additional analysis using Python and Pandas.
+- Create visualizations using Matplotlib.
+- Build an interactive dashboard using Streamlit.
+- Present useful insights in a simple and understandable format.
+
+---
+
+4. Key Project Highlights
+
+Database & SQL
+
+- Designed a relational MySQL database for job market analysis.
+- Created separate tables for companies, industries, job roles, job postings, skills, candidates, and related entities.
+- Used primary keys and foreign-key relationships.
+- Applied normalization principles to reduce unnecessary duplication.
+- Performed Basic, Intermediate, and Advanced SQL analysis.
+- Used joins, subqueries, aggregations, CTEs, CASE statements, and window functions.
+
+Skill Analysis
+
+- Identified the most demanded skills.
+- Compared market demand with candidate skill availability.
+- Calculated skill gaps.
+- Performed candidate skill matching against job requirements.
+
+Python Analysis
+
+- Connected Python directly with MySQL.
+- Loaded database data using Pandas.
+- Performed grouping and aggregation.
+- Analyzed salary, work mode, job type, experience, and skill demand.
+- Created basic charts using Matplotlib.
+
+Dashboard
+
+- Built an interactive Streamlit dashboard.
+- Connected the dashboard directly to MySQL.
+- Added job market overview metrics.
+- Added skill demand and salary analysis.
+- Added work mode and skill gap analysis.
+- Displayed job posting data in an interactive table.
+
+---
+
+5. Dataset
+
+The project uses a synthetic but realistic job market dataset.
+
+The dataset was created for:
+
+- Educational purposes
+- Portfolio demonstration
+- SQL practice
+- Python data analysis
+- Dashboard development
+
+It should not be treated as an actual representation of the current job market.
+
+The current database contains approximately:
+
+- 500 job postings
+- 50 companies
+- 20 job roles
+- 15 industries
+
+The dataset includes information such as:
+
+- Job title
+- Job type
+- Experience required
+- Minimum salary
+- Maximum salary
+- Work mode
+- Posted date
+- Company
+- Industry
+- Skills
+
+---
+
+6. Technologies Used
+
+Database
+
+- MySQL
+
+Programming
+
+- Python
+
+Python Libraries
+
+- Pandas
+- Matplotlib
+- mysql-connector-python
+
+Dashboard
+
+- Streamlit
+
+Tools
+
+- MySQL Workbench
+- Visual Studio Code
+
+
+---
+
+7. Database Design
+
+The main database is:
+
+"job_market_intelligence"
+
+Important tables used in the project include:
+
+- Companies
+- Industries
+- Job Roles
+- Job Postings
+- Locations
+- Skills
+- Job Skills
+- Candidates
+- Candidate Skills
+- Interviews
+
+The tables are connected through appropriate keys and relationships.
+
+The database design helps separate different types of information instead of storing everything in one large table.
+
+An ER diagram was also created to represent the relationships between the database tables.
+
+---
+
+8. SQL Analysis
+
+SQL was the main analysis component of the project.
+
+Basic Queries
+
+Basic analysis included:
+
+- Selecting required records
+- Filtering data
+- Sorting records
+- Aggregate functions
+- GROUP BY
+- HAVING
+- Basic salary analysis
+
+Intermediate Queries
+
+Intermediate analysis included:
+
+- INNER JOIN
+- LEFT JOIN
+- Multiple-table analysis
+- Subqueries
+- CASE statements
+- Grouped analysis
+- Salary and job comparisons
+
+Advanced Queries
+
+Advanced analysis included:
+
+- Complex subqueries
+- Common Table Expressions (CTEs)
+- Window functions
+- Ranking
+- Comparisons between companies and jobs
+- Advanced business-oriented analysis
+
+Separate SQL files were created to keep the project organized.
+
+---
+
+9. Skill Analysis
+
+The skill analysis focuses on understanding the relationship between job requirements and candidate skills.
+
+The analysis includes:
+
+- Top demanded skills
+- Number of jobs requiring each skill
+- Role-wise skill demand
+- Market demand vs candidate availability
+- Skill gap calculation
+- Candidate skill matching
+
+This part of the project helps demonstrate how job-market data can be used to understand skill requirements.
+
+---
+
+10. Business Insights
+
+Business-oriented SQL analysis was performed to understand:
+
+- Companies with higher numbers of job postings
+- Job demand by role
+- Job demand by industry
+- Salary patterns
+- Work mode distribution
+- Experience requirements
+- Skill demand
+- Candidate skill gaps
+
+These insights are presented as analytical findings rather than predictions about the actual job market because the project uses synthetic data.
+
+---
+
+11. Python Integration
+
+After completing the SQL analysis, Python was used for additional analysis.
+
+The Python workflow includes:
+
+1. Connecting Python with MySQL.
+2. Loading job posting data using Pandas.
+3. Cleaning and converting data types.
+4. Grouping records.
+5. Performing aggregations.
+6. Performing salary analysis.
+7. Analyzing work modes and job types.
+8. Analyzing experience requirements.
+9. Analyzing skill demand.
+10. Creating basic visualizations.
+11. Generating simple insights from the results.
+
+The Python part was intentionally kept simple and focused on concepts that are useful for a beginner-level data analytics portfolio project.
+
+---
+
+12. Python Visualizations
+
+The following charts were created using Matplotlib:
+
+1. Job Distribution by Work Mode
+2. Job Distribution by Job Type
+3. Jobs by Experience Requirement
+4. Distribution of Maximum Salary
+5. Monthly Job Postings
+
+The charts were saved in the project's "screenshots" folder.
+
+---
+
+13. Streamlit Dashboard
+
+A Streamlit dashboard was created to bring the analysis together in one place.
+
+The dashboard connects directly to the MySQL database.
+
+Job Market Overview
+
+The dashboard displays:
+
+- Total Jobs
+- Total Companies
+- Total Roles
+- Total Industries
+- Top Job Roles
+- Top Industries
+
+Skill Demand
+
+The dashboard displays:
+
+- Top 10 Most Demanded Skills
+- Skill Demand Table
+- Role-wise Skill Demand
+
+Salary Analysis
+
+The dashboard includes:
+
+- Average Minimum Salary
+- Average Maximum Salary
+- Salary by Work Mode
+- Salary by Experience
+
+Work Mode Analysis
+
+The dashboard includes:
+
+- Remote
+- Hybrid
+- Onsite
+- Job Type Distribution
+
+Skill Gap Analysis
+
+The dashboard includes:
+
+- Market Demand vs Candidate Availability
+- Candidate Skill Match
+- Skill Match Percentage
+
+Job Postings Data
+
+The dashboard also provides a table containing the job posting records used for analysis.
+
+---
+
+14. Project Workflow
+
+The overall workflow of the project was:
+
+Synthetic Dataset → MySQL Database → SQL Analysis → Python & Pandas Analysis → Matplotlib Visualizations → Streamlit Dashboard
+
+This workflow shows how data can move from database storage to analysis and finally to a user-friendly dashboard.
+
+---
+
+15. Project Structure
+
+The project is organized into the following folders:
+
+Job-Market-Intelligence/
+│
+├── database/
+│   ├── create_database.sql
+│   ├── create_tables.sql
+│   └── insert_data.sql
+│
+├── sql/
+│   ├── basic_queries.sql
+│   ├── intermediate_queries.sql
+│   ├── advanced_queries.sql
+│   ├── skill_analysis.sql
+│   └── business_insights.sql
+│
+├── python/
+│   └── mysql_connection.py
+│
+├── dashboard/
+│   └── app.py
+│
+├── er_diagram/
+│
+├── screenshots/
+│
+├── data/
+│
+└── documentation/
+    └── project_documentation.txt
+
+---
+
+16. Key Outcomes
+
+By completing this project, the following practical concepts were demonstrated:
+
+- Relational database design
+- Database normalization
+- SQL querying
+- Data joining
+- Subqueries and CTEs
+- Window functions
+- Aggregation and grouping
+- Skill demand analysis
+- Salary analysis
+- Python-MySQL integration
+- Pandas data analysis
+- Matplotlib visualization
+- Streamlit dashboard development
+- Basic business insight generation
+
+---
+
+17. Limitations
+
+This project has some limitations:
+
+- The dataset is synthetic and not collected from live job portals.
+- Salary and job-demand values are created for realistic educational analysis.
+- Candidate skill matching is based on the available project dataset.
+- The dashboard does not represent real-time job market conditions.
+
+Therefore, the results should be considered demonstration and educational insights, not actual employment-market statistics.
+
+---
+
+18. Future Scope
+
+The project can be improved in the future by:
+
+- Using regularly updated job-market datasets.
+- Adding more candidate profiles.
+- Adding interactive dashboard filters.
+- Adding more detailed role-wise skill analysis.
+- Adding job recommendation functionality.
+- Adding additional salary visualizations.
+- Deploying the Streamlit dashboard online.
+- Connecting the system with external job datasets or APIs.
+
+---
+
+19. Conclusion
+
+The Job Market Intelligence & Skill Gap Analysis System combines MySQL,Job Market Intelligence & Skill Gap Analysis System
+
+1. Project Overview
+
+The Job Market Intelligence & Skill Gap Analysis System is a data analytics project developed to study job market trends, salary patterns, skill requirements, job roles, industries, work modes, and candidate skill gaps.
+
+The main purpose of this project is to understand how job market data can be stored, analyzed, and presented in a simple and useful way using SQL, Python, and an interactive dashboard.
+
+For this project, a realistic synthetic dataset was created specifically for portfolio and educational analysis. The dataset is not collected from a live job portal or real company database. It was designed to represent realistic job-market scenarios while keeping the project suitable for learning and demonstration.
+
+---
+
+2. Problem Statement
+
+Job seekers often have difficulty understanding which skills are in demand, what types of jobs are available, how salaries vary, and whether their current skills match job requirements.
+
+The project aims to analyze these areas in a structured database and present the results through SQL analysis, Python visualizations, and a Streamlit dashboard.
+
+---
+
+3. Project Objectives
+
+The main objectives of the project are:
+
+- Store job market information in a structured MySQL database.
+- Analyze job postings using SQL.
+- Identify commonly demanded job roles and industries.
+- Analyze minimum and maximum salary ranges.
+- Identify the most demanded technical skills.
+- Analyze remote, hybrid, and onsite opportunities.
+- Compare job skill demand with candidate skills.
+- Perform additional analysis using Python and Pandas.
+- Create visualizations using Matplotlib.
+- Build an interactive dashboard using Streamlit.
+- Present useful insights in a simple and understandable format.
+
+---
+
+4. Key Project Highlights
+
+Database & SQL
+
+- Designed a relational MySQL database for job market analysis.
+- Created separate tables for companies, industries, job roles, job postings, skills, candidates, and related entities.
+- Used primary keys and foreign-key relationships.
+- Applied normalization principles to reduce unnecessary duplication.
+- Performed Basic, Intermediate, and Advanced SQL analysis.
+- Used joins, subqueries, aggregations, CTEs, CASE statements, and window functions.
+
+Skill Analysis
+
+- Identified the most demanded skills.
+- Compared market demand with candidate skill availability.
+- Calculated skill gaps.
+- Performed candidate skill matching against job requirements.
+
+Python Analysis
+
+- Connected Python directly with MySQL.
+- Loaded database data using Pandas.
+- Performed grouping and aggregation.
+- Analyzed salary, work mode, job type, experience, and skill demand.
+- Created basic charts using Matplotlib.
+
+Dashboard
+
+- Built an interactive Streamlit dashboard.
+- Connected the dashboard directly to MySQL.
+- Added job market overview metrics.
+- Added skill demand and salary analysis.
+- Added work mode and skill gap analysis.
+- Displayed job posting data in an interactive table.
+
+---
+
+5. Dataset
+
+The project uses a synthetic but realistic job market dataset.
+
+The dataset was created for:
+
+- Educational purposes
+- Portfolio demonstration
+- SQL practice
+- Python data analysis
+- Dashboard development
+
+It should not be treated as an actual representation of the current job market.
+
+The current database contains approximately:
+
+- 500 job postings
+- 50 companies
+- 20 job roles
+- 15 industries
+
+The dataset includes information such as:
+
+- Job title
+- Job type
+- Experience required
+- Minimum salary
+- Maximum salary
+- Work mode
+- Posted date
+- Company
+- Industry
+- Skills
+
+---
+
+6. Technologies Used
+
+Database
+
+- MySQL
+
+Programming
+
+- Python
+
+Python Libraries
+
+- Pandas
+- NumPy
+- Matplotlib
+- mysql-connector-python
+
+Dashboard
+
+- Streamlit
+
+Tools
+
+- MySQL Workbench
+- Visual Studio Code
+- GitHub
+
+---
+
+7. Database Design
+
+The main database is:
+
+"job_market_intelligence"
+
+Important tables used in the project include:
+
+- Companies
+- Industries
+- Job Roles
+- Job Postings
+- Locations
+- Skills
+- Job Skills
+- Candidates
+- Candidate Skills
+- Interviews
+
+The tables are connected through appropriate keys and relationships.
+
+The database design helps separate different types of information instead of storing everything in one large table.
+
+An ER diagram was also created to represent the relationships between the database tables.
+
+---
+
+8. SQL Analysis
+
+SQL was the main analysis component of the project.
+
+Basic Queries
+
+Basic analysis included:
+
+- Selecting required records
+- Filtering data
+- Sorting records
+- Aggregate functions
+- GROUP BY
+- HAVING
+- Basic salary analysis
+
+Intermediate Queries
+
+Intermediate analysis included:
+
+- INNER JOIN
+- LEFT JOIN
+- Multiple-table analysis
+- Subqueries
+- CASE statements
+- Grouped analysis
+- Salary and job comparisons
+
+Advanced Queries
+
+Advanced analysis included:
+
+- Complex subqueries
+- Common Table Expressions (CTEs)
+- Window functions
+- Ranking
+- Comparisons between companies and jobs
+- Advanced business-oriented analysis
+
+Separate SQL files were created to keep the project organized.
+
+---
+
+9. Skill Analysis
+
+The skill analysis focuses on understanding the relationship between job requirements and candidate skills.
+
+The analysis includes:
+
+- Top demanded skills
+- Number of jobs requiring each skill
+- Role-wise skill demand
+- Market demand vs candidate availability
+- Skill gap calculation
+- Candidate skill matching
+
+This part of the project helps demonstrate how job-market data can be used to understand skill requirements.
+
+---
+
+10. Business Insights
+
+Business-oriented SQL analysis was performed to understand:
+
+- Companies with higher numbers of job postings
+- Job demand by role
+- Job demand by industry
+- Salary patterns
+- Work mode distribution
+- Experience requirements
+- Skill demand
+- Candidate skill gaps
+
+These insights are presented as analytical findings rather than predictions about the actual job market because the project uses synthetic data.
+
+---
+
+11. Python Integration
+
+After completing the SQL analysis, Python was used for additional analysis.
+
+The Python workflow includes:
+
+1. Connecting Python with MySQL.
+2. Loading job posting data using Pandas.
+3. Cleaning and converting data types.
+4. Grouping records.
+5. Performing aggregations.
+6. Performing salary analysis.
+7. Analyzing work modes and job types.
+8. Analyzing experience requirements.
+9. Analyzing skill demand.
+10. Creating basic visualizations.
+11. Generating simple insights from the results.
+
+The Python part was intentionally kept simple and focused on concepts that are useful for a beginner-level data analytics portfolio project.
+
+---
+
+12. Python Visualizations
+
+The following charts were created using Matplotlib:
+
+1. Job Distribution by Work Mode
+2. Job Distribution by Job Type
+3. Jobs by Experience Requirement
+4. Distribution of Maximum Salary
+5. Monthly Job Postings
+
+The charts were saved in the project's "screenshots" folder.
+
+---
+
+13. Streamlit Dashboard
+
+A Streamlit dashboard was created to bring the analysis together in one place.
+
+The dashboard connects directly to the MySQL database.
+
+Job Market Overview
+
+The dashboard displays:
+
+- Total Jobs
+- Total Companies
+- Total Roles
+- Total Industries
+- Top Job Roles
+- Top Industries
+
+Skill Demand
+
+The dashboard displays:
+
+- Top 10 Most Demanded Skills
+- Skill Demand Table
+- Role-wise Skill Demand
+
+Salary Analysis
+
+The dashboard includes:
+
+- Average Minimum Salary
+- Average Maximum Salary
+- Salary by Work Mode
+- Salary by Experience
+
+Work Mode Analysis
+
+The dashboard includes:
+
+- Remote
+- Hybrid
+- Onsite
+- Job Type Distribution
+
+Skill Gap Analysis
+
+The dashboard includes:
+
+- Market Demand vs Candidate Availability
+- Candidate Skill Match
+- Skill Match Percentage
+
+Job Postings Data
+
+The dashboard also provides a table containing the job posting records used for analysis.
+
+---
+
+14. Project Workflow
+
+The overall workflow of the project was:
+
+Synthetic Dataset → MySQL Database → SQL Analysis → Python & Pandas Analysis → Matplotlib Visualizations → Streamlit Dashboard
+
+This workflow shows how data can move from database storage to analysis and finally to a user-friendly dashboard.
+
+---
+
+15. Project Structure
+
+The project is organized into the following folders:
+
+Job-Market-Intelligence/
+│
+├── database/
+│   ├── create_database.sql
+│   ├── create_tables.sql
+│   └── insert_data.sql
+│
+├── sql/
+│   ├── basic_queries.sql
+│   ├── intermediate_queries.sql
+│   ├── advanced_queries.sql
+│   ├── skill_analysis.sql
+│   └── business_insights.sql
+│
+├── python/
+│   └── mysql_connection.py
+│
+├── dashboard/
+│   └── app.py
+│
+├── er_diagram/
+│
+├── screenshots/
+│
+├── data/
+│
+└── documentation/
+    └── project_documentation.txt
+
+---
+
+16. Key Outcomes
+
+By completing this project, the following practical concepts were demonstrated:
+
+- Relational database design
+- Database normalization
+- SQL querying
+- Data joining
+- Subqueries and CTEs
+- Window functions
+- Aggregation and grouping
+- Skill demand analysis
+- Salary analysis
+- Python-MySQL integration
+- Pandas data analysis
+- Matplotlib visualization
+- Streamlit dashboard development
+- Basic business insight generation
+
+---
+
+17. Limitations
+
+This project has some limitations:
+
+- The dataset is synthetic and not collected from live job portals.
+- Salary and job-demand values are created for realistic educational analysis.
+- Candidate skill matching is based on the available project dataset.
+- The dashboard does not represent real-time job market conditions.
+
+Therefore, the results should be considered demonstration and educational insights, not actual employment-market statistics.
+
+---
+
+18. Future Scope
+
+The project can be improved in the future by:
+
+- Using regularly updated job-market datasets.
+- Adding more candidate profiles.
+- Adding interactive dashboard filters.
+- Adding more detailed role-wise skill analysis.
+- Adding job recommendation functionality.
+- Adding additional salary visualizations.
+- Deploying the Streamlit dashboard online.
+- Connecting the system with external job datasets or APIs.
+
+---
+
+19. Conclusion
+
+The Job Market Intelligence & Skill Gap Analysis System combines MySQL, SQL, Python, Pandas, Matplotlib, and Streamlit into one complete data analytics project.
+
+The project helped demonstrate the complete journey from designing a relational database and performing SQL analysis to creating Python visualizations and an interactive dashboard.
+
+Since the project uses a realistic synthetic dataset, the main focus is on demonstrating the data analytics workflow, technical skills, and analytical approach rather than presenting the results as real-world market statistics.
+
+Overall, the project provides a practical portfolio example of how database management, data analysis, visualization, and dashboard development can be combined to study a job-market related problem. Python, Pandas, Matplotlib, and Streamlit into one complete data analytics project.
+
+The project helped demonstrate the complete journey from designing a relational database and performing SQL analysis to creating Python visualizations and an interactive dashboard.
+
+Since the project uses a realistic synthetic dataset, the main focus is on demonstrating the data analytics workflow, technical skills, and analytical approach rather than presenting the results as real-world market statistics.
+
+Overall, the project provides a practical portfolio example of how database management, data analysis, visualization, and dashboard development can be combined to study a job-market related problem.
